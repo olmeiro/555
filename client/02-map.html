@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>map js</title>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+  <script>
+    const products = [
+      { title: "hamburguesa", precio: 112, buy: true },
+      { title: "pizza", precio: 90, buy: true },
+      { title: "hamburguesa dinosaurio", precio: 113, buy: false },
+    ];
+
+    const app = document.getElementById("app");
+    const list = products.map((product) => {
+      return `<i>${product.title} - ${product.precio}</i>`;
+    });
+
+    app.innerHTML = list.join(""); //innerHTML pide string.
+  </script>
+</html>
