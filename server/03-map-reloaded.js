@@ -95,14 +95,12 @@ Output:
 
 //solucion 1:
 export function addNewAttr(array) {
-
   const tax = array.map(item => {
     return {
       ...item,
       taxes: Math.trunc(item.price * 0.19)
     }
   })
-
   return tax;
 }
 
