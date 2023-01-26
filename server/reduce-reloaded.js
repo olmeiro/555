@@ -156,5 +156,7 @@ const result = numbers.reduce((acum, item) => {
 
 console.log(result)
 
-
-
+//Tienes un array de números y tu reto es retornar la suma de todos los valores en él.
+const aSumar = [2, 4, 8];
+const total = aSumar.reduce((sume, numero) => sume + numero, 0)
+console.log(total)
