@@ -57,4 +57,7 @@ const products = [
 //muy para cosas que no se repiten como el id: 
 const rta3 = products.find(item => item.id === '🍔');
 console.log(rta3);
+//si quiero saber la posición del elemento
 
+const rta4 = products.findIndex(item => item.id === '🍔');
+console.log(rta4);
