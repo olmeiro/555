@@ -88,25 +88,28 @@ const ordersByDate = [
     customerName: "Nicolas",
     total: 600,
     delivered: true,
-    date: new Date(2022, 1, 1, 10),
+    date: new Date(2022, 1, 8, 10), //año-mes-hora-minuto
   },
   {
     customerName: "Zulema",
     total: 120,
     delivered: false,
-    date: new Date(2022, 1, 1, 10),
+    date: new Date(2023, 6, 9, 10),
   },
   {
     customerName: "Santiago",
     total: 1840,
     delivered: true,
-    date: new Date(2022, 1, 1, 10),
+    date: new Date(2019, 3, 13, 10),
   },
   {
     customerName: "Valentina",
     total: 240,
     delivered: true,
-    date: new Date(2022, 1, 1, 10),
+    date: new Date(2022, 1, 14, 10),
   },
 ];
+
+ordersByDate.sort((a, b) => a.date - b.date)
+console.log(ordersByDate)
 
